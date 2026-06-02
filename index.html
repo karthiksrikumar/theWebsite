@@ -757,7 +757,7 @@
   <div id="heroLogos"></div>
 
   <div class="hero-award-badge">
-    Protecting lives, Democratizing Access.
+    🏆 Winner — 2024 Congressional App Challenge
   </div>
 
   <div class="hero-logo-stack">
@@ -818,14 +818,14 @@
     <div class="video-wrap">
       <iframe
         id="ytPlayer"
-        src="https://www.youtube.com/embed/r2OG-tP0dto?autoplay=1&mute=1&start=129&loop=1&playlist=r2OG-tP0dto&controls=1&rel=0&modestbranding=1&enablejsapi=1"
+        src="https://www.youtube.com/embed/r2OG-tP0dto?autoplay=1&mute=0&start=129&loop=1&playlist=r2OG-tP0dto&controls=1&rel=0&modestbranding=1&enablejsapi=1"
         allow="autoplay; encrypted-media; picture-in-picture"
         allowfullscreen
         title="DriveAEye Demo"
       ></iframe>
       <!-- Sound toggle button -->
-      <button class="sound-btn muted" id="soundBtn" onclick="toggleSound()">
-        🔇 Tap for Sound
+      <button class="sound-btn unmuted" id="soundBtn" onclick="toggleSound()">
+        🔊 Sound On
       </button>
     </div>
 
@@ -1022,7 +1022,7 @@
   }
 
   /* ── SOUND TOGGLE ── */
-  let muted = true;
+  let muted = false;
   function toggleSound() {
     const iframe = document.getElementById('ytPlayer');
     const btn = document.getElementById('soundBtn');
